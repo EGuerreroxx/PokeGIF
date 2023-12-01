@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeGIF</title>
-    <script src ="./assets/script.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/sketchy/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeGIF</title>
+  <script src="./assets/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/sketchy/bootstrap.min.css">
 </head>
 
 <body>
-    <h1>POKEGIF (╯°□°)╯︵◓</h1>
-    <div class="search">
+  <h1>POKEGIF (╯°□°)╯︵◓</h1>
+  <section class="search">
     <label for="search"></label>
-          <input type="search" id="search" name="search" placeholder="Search" />
-          <section id="buttons">
-              <button>Search</button>
-</div>
-<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h4 class="card-title">Info card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-          
-    
+    <input type="search" id="search" name="search" placeholder="Search" />
+    <button id="btn" type="button" class="btn btn-info">Search</button>
+  </section>
+
+
+  <article class="card text-white bg-info mb-3" style="max-width: 20rem;">
+    <header class="card-header">Pokemon Stats:</header>
+    <section class="card-body">
+      <h4 class="card-title">Pokemon Name</h4>
+      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio veniam asperiores perspiciatis dolorum incidunt a pariatur ex sapiente vitae in temporibus molestias minus, alias quo ea quod vel tenetur quaerat?</p>
+      </section>
+  </article>
+  <main class="giphy"> </main>
+
+
 </body>
+
 </html>
