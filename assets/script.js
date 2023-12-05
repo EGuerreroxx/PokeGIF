@@ -2,6 +2,7 @@ var giphyDisplay = document.querySelector("#giphy");
 var pokeData = document.querySelector("#poke-data");
 var btn = document.getElementById("btn");
 var searchInput = document.querySelector("#search");
+var listContainer = document.querySelector("#list-of-pokemon");
 
 function getGifData(search) {
     fetch('http://api.giphy.com/v1/gifs/search?api_key=qV1xiffn8m3Ccvrhl7MV4hp9WtzV6bsq&limit=20&q=Pokemon ' + search)
@@ -13,12 +14,11 @@ function getGifData(search) {
 
             for (var i = 0; i < data.data.length; i++) {
                 var display = document.createElement('img');
-                display.src = data.data[i].images["480w_still"].url;
+                display.src = data.data[i].images.preview_gif.url;
                 giphyDisplay.append(display);
             }
         })
 }
-
 
 function getPokeData(value) {
     var search = value.toLowerCase();
@@ -28,7 +28,7 @@ function getPokeData(value) {
         })
         .then(function (data) {
             console.log(data);
-            for (var i = 0; i < data.moves.length; i++) {
+            for (var i = 0; i < data.stats.length; i++) {
                 //     <article class="card text-white bg-info mb-3">
                 //     <header class="card-header">Pokemon Stats:</header>
                 //     <section class="card-body">
@@ -47,7 +47,7 @@ function getPokeData(value) {
                 sectionEl.classList.add('card-body');
                 var h4El = document.createElement('h4');
                 h4El.classList.add('card-title');
-                h4El.textContent = data.moves[i].move.name;
+                h4El.textContent = data.stats[i].stat.name.toUpperCase() + [" "] + data.stats[i].base_stat;
                 var pEl = document.createElement('p');
                 pEl.classList.add('card-text');
                 pokeData.append(colEl);
@@ -58,7 +58,6 @@ function getPokeData(value) {
             getGifData(search);
         })
 }
-
 
 btn.addEventListener('click', function (event) {
     event.preventDefault();
