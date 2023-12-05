@@ -10,23 +10,24 @@
 </head>
 
 <body>
+  <main class="container-fluid">
   <h1>POKEGIF (╯°□°)╯︵◓</h1>
   <section class="search">
     <label for="search"></label>
-    <input type="search" id="search" name="search" placeholder="Search" />
+    <input type="search" id="search" name="search" list="list-of-pokemon" placeholder="Search" />
+    <datalist id="list-of-pokemon">
+
+    </datalist>
     <button id="btn" type="button" class="btn btn-info">Search</button>
   </section>
 
+  <section id="poke-data" class="row">
 
-  <article class="card text-white bg-info mb-3" style="max-width: 20rem;">
-    <header class="card-header">Pokemon Stats:</header>
-    <section class="card-body">
-      <h4 class="card-title">Pokemon Name</h4>
-      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio veniam asperiores perspiciatis dolorum incidunt a pariatur ex sapiente vitae in temporibus molestias minus, alias quo ea quod vel tenetur quaerat?</p>
-      </section>
-  </article>
-  <main class="giphy"> </main>
+  </section>
 
+  <section id="giphy"> </section>
+  
+</main>
 
 </body>
 
