@@ -26,3 +26,16 @@ button {
     font-size: 25px;
 }
 
+#giphy {
+    margin-top: 50px;
+}
+
+img, svg {
+    align-items: center;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

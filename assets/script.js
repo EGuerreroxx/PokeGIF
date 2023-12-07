@@ -11,7 +11,7 @@ function clearContent() {
 }
 
 function getGifData(search) {
-    fetch('https://api.giphy.com/v1/gifs/search?api_key=qV1xiffn8m3Ccvrhl7MV4hp9WtzV6bsq&limit=20&q=Pokemon ' + search)
+    fetch('https://api.giphy.com/v1/gifs/search?api_key=qV1xiffn8m3Ccvrhl7MV4hp9WtzV6bsq&limit=50&q=Pokemon ' + search)
         .then(function (response) {
             return response.json();
         })
@@ -72,6 +72,7 @@ function displayPokeData(data, search) {
         sectionEl.append(h4El, pEl);
     }
     getGifData(search);
+}
 
 
 function getPokeData(value) {
