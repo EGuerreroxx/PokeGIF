@@ -33,7 +33,3 @@ searched.
 ![Screenshot of PokeGIF](./screenshots/Default_Page.jpg)
 ![Screenshot of PokeGIF](./screenshots/Pokemon_Searched_Page.jpg)
 
-
-## Screenshot
-![Screenshot of PokeGIF](./screenshots/blank_search.jpg)
-
