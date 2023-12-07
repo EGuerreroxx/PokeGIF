@@ -10,7 +10,7 @@ function clearContent() {
 }
 
 function getGifData(search) {
-    fetch('http://api.giphy.com/v1/gifs/search?api_key=qV1xiffn8m3Ccvrhl7MV4hp9WtzV6bsq&limit=20&q=Pokemon ' + search)
+    fetch('https://api.giphy.com/v1/gifs/search?api_key=qV1xiffn8m3Ccvrhl7MV4hp9WtzV6bsq&limit=20&q=Pokemon ' + search)
         .then(function (response) {
             return response.json();
         })
