@@ -60,7 +60,15 @@ function getPokeData(value) {
 }
 
 
-btn.addEventListener('click', function (event) {
+btn.addEventListener('keypress', function (event) {
     event.preventDefault();
-    getPokeData(searchInput.value);
+    if (e.key === 'Enter') {
+        getPokeData(searchInput.value);
+      }
+    
 });
+
+// document.querySelector('#txtSearch').addEventListener('keypress', function (e) {
+//     if (e.key === 'Enter') {
+//       // code for enter
+//     }
