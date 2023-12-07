@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(186, 229, 229);
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.search {
+   text-align: center;
+   margin-top: 30px;
+   font-size: 40px;
+   margin-bottom: 30px;
+    
+}
+
+button {
+    height: 50px;
+    width:  80px;
+   
+}
+
+.btn {
+    font-size: 25px;
+}
+
